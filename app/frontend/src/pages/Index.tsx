@@ -1,13 +1,10 @@
 import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Search, X } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductCard from "@/components/ProductCard";
-import { products, categories, WHATSAPP_NUMBER } from "@/data/products";
-
-const HERO_IMAGE = "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png";
+import { products, categories, WHATSAPP_NUMBER, HERO_IMAGE } from "@/data/products";
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState<string>("todos");
@@ -31,7 +28,7 @@ const Index = () => {
   }, [activeCategory, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-[#F5F0EB]">
+    <div className="min-h-screen bg-[#f0f1f3]">
       <Header />
 
       {/* Hero Section */}
@@ -42,18 +39,18 @@ const Index = () => {
             alt="Alfa Soluções em Concreto"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1C]/90 via-[#1C1C1C]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a2f4e]/90 via-[#1a2f4e]/60 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="max-w-xl">
-            <div className="inline-block bg-[#C4956A]/20 backdrop-blur-sm border border-[#C4956A]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-[#C4956A] text-xs sm:text-sm font-medium">
+            <div className="inline-block bg-[#2a9d8f]/20 backdrop-blur-sm border border-[#2a9d8f]/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-[#2a9d8f] text-xs sm:text-sm font-medium">
                 Catálogo 2026
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               Soluções em{" "}
-              <span className="text-[#C4956A]">Concreto</span>{" "}
+              <span className="text-[#2a9d8f]">Concreto</span>{" "}
               de Alta Qualidade
             </h1>
             <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 max-w-md">
@@ -62,7 +59,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="#produtos"
-                className="inline-flex items-center justify-center gap-2 bg-[#C4956A] hover:bg-[#b3845c] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#1a2f4e] hover:bg-[#2a9d8f] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors border border-white/20"
               >
                 Ver Catálogo
                 <ArrowRight className="w-4 h-4" />
@@ -85,7 +82,7 @@ const Index = () => {
       <section id="categorias" className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1C1C1C] mb-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1a2f4e] mb-3">
               Nossas Categorias
             </h2>
             <p className="text-sm sm:text-base text-gray-500 max-w-lg mx-auto">
@@ -108,7 +105,7 @@ const Index = () => {
                   alt={cat.name}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/80 via-[#1C1C1C]/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a2f4e]/80 via-[#1a2f4e]/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                   <h3 className="text-white font-bold text-xs sm:text-sm leading-tight">
                     {cat.name}
@@ -127,7 +124,7 @@ const Index = () => {
       <section id="produtos" className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1C1C1C] mb-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1a2f4e] mb-3">
               Nossos Produtos
             </h2>
             <p className="text-sm sm:text-base text-gray-500 max-w-lg mx-auto">
@@ -145,7 +142,7 @@ const Index = () => {
                 placeholder="Buscar produtos..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-10 py-2.5 rounded-lg border border-gray-200 bg-[#F5F0EB] text-sm focus:outline-none focus:ring-2 focus:ring-[#C4956A]/50 focus:border-[#C4956A] transition-all"
+                className="w-full pl-10 pr-10 py-2.5 rounded-lg border border-gray-200 bg-[#f0f1f3] text-sm focus:outline-none focus:ring-2 focus:ring-[#2a9d8f]/50 focus:border-[#2a9d8f] transition-all"
               />
               {searchQuery && (
                 <button
@@ -163,8 +160,8 @@ const Index = () => {
                 onClick={() => setActiveCategory("todos")}
                 className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                   activeCategory === "todos"
-                    ? "bg-[#1C1C1C] text-white shadow-md"
-                    : "bg-[#F5F0EB] text-gray-600 hover:bg-gray-200"
+                    ? "bg-[#1a2f4e] text-white shadow-md"
+                    : "bg-[#f0f1f3] text-gray-600 hover:bg-gray-200"
                 }`}
               >
                 Todos ({products.length})
@@ -177,8 +174,8 @@ const Index = () => {
                     onClick={() => setActiveCategory(cat.slug)}
                     className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                       activeCategory === cat.slug
-                        ? "bg-[#1C1C1C] text-white shadow-md"
-                        : "bg-[#F5F0EB] text-gray-600 hover:bg-gray-200"
+                        ? "bg-[#1a2f4e] text-white shadow-md"
+                        : "bg-[#f0f1f3] text-gray-600 hover:bg-gray-200"
                     }`}
                   >
                     {cat.name} ({count})
@@ -204,7 +201,7 @@ const Index = () => {
                   setSearchQuery("");
                   setActiveCategory("todos");
                 }}
-                className="mt-4 text-[#C4956A] text-sm font-medium hover:underline"
+                className="mt-4 text-[#2a9d8f] text-sm font-medium hover:underline"
               >
                 Limpar filtros
               </button>
@@ -214,7 +211,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 bg-[#1C1C1C]">
+      <section className="py-16 sm:py-20 bg-[#1a2f4e]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Gostou dos nossos produtos?
