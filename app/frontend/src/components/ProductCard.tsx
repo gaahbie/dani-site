@@ -6,14 +6,6 @@ interface ProductCardProps {
   product: Product;
 }
 
-const categoryIcons: Record<string, string> = {
-  "area-e-lazer": "🏡",
-  revestimento: "🧱",
-  "elemento-vazado": "🔲",
-  acabamento: "🏗️",
-  "construcao-civil": "🏠",
-};
-
 const categoryColors: Record<string, string> = {
   "area-e-lazer": "bg-emerald-100 text-emerald-700",
   revestimento: "bg-blue-100 text-blue-700",
@@ -23,7 +15,6 @@ const categoryColors: Record<string, string> = {
 };
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const icon = categoryIcons[product.categorySlug] || "📦";
   const colorClass = categoryColors[product.categorySlug] || "bg-gray-100 text-gray-700";
 
   return (
@@ -31,11 +22,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
       to={`/produto/${product.id}`}
       className="group bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col"
     >
-      {/* Icon Area */}
-      <div className="h-36 sm:h-44 bg-gradient-to-br from-[#EFF6FF] to-[#DBEAFE] flex items-center justify-center relative">
-        <span className="text-5xl sm:text-6xl group-hover:scale-110 transition-transform duration-300">
-          {icon}
-        </span>
+      {/* Product Image */}
+      <div className="h-36 sm:h-44 bg-gradient-to-br from-[#EFF6FF] to-[#DBEAFE] flex items-center justify-center relative overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
         <div className="absolute top-3 left-3">
           <span className={`text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded-full ${colorClass}`}>
             {product.category}

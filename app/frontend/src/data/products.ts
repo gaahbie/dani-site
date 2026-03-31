@@ -5,6 +5,7 @@ export interface Product {
   dimensions: string;
   category: string;
   categorySlug: string;
+  image: string;
 }
 
 export interface Category {
@@ -20,37 +21,37 @@ export const categories: Category[] = [
   {
     name: "Área e Lazer",
     slug: "area-e-lazer",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png",
+    image: "/assets/catalog/2.png",
     description: "Mesas, bancos, lixeiras e muito mais para seu espaço de lazer",
   },
   {
     name: "Revestimento",
     slug: "revestimento",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png",
+    image: "/assets/catalog/11.png",
     description: "Revestimentos decorativos em concreto para paredes e fachadas",
   },
   {
     name: "Elemento Vazado",
     slug: "elemento-vazado",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png",
+    image: "/assets/catalog/19.png",
     description: "Cobogós e elementos vazados para ventilação e decoração",
   },
   {
     name: "Acabamento em Concreto",
     slug: "acabamento",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png",
+    image: "/assets/catalog/21.png",
     description: "Pisos, guias, pingadeiras e acabamentos diversos",
   },
   {
     name: "Construção Civil",
     slug: "construcao-civil",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-30/42457c48-e370-4eb9-abf2-15a6b16adac0.png",
+    image: "/assets/catalog/25.png",
     description: "Soluções em concreto para construção civil",
   },
 ];
 
 export const products: Product[] = [
-  // Área e Lazer
+  // Área e Lazer — Pages 2-10
   {
     id: "mesa-1m-diametro",
     name: "Mesa 1 Metro Diâmetro",
@@ -58,6 +59,7 @@ export const products: Product[] = [
     dimensions: "1 metro de diâmetro",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/5ecbdb99-0dae-406d-90ef-83a5126a44a6.png",
   },
   {
     id: "pergolado-concreto",
@@ -66,6 +68,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/cc01bc73-828f-46ea-acfb-3731fbe46256.png",
   },
   {
     id: "banco-reto-200x045",
@@ -74,6 +77,7 @@ export const products: Product[] = [
     dimensions: "2,00 x 0,45",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/3.png",
   },
   {
     id: "mesa-080-diametro",
@@ -82,6 +86,7 @@ export const products: Product[] = [
     dimensions: "0,80 metro de diâmetro",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/e7310c7a-479f-4596-851d-9e4435304412.png",
   },
   {
     id: "mesa-080x080",
@@ -90,6 +95,7 @@ export const products: Product[] = [
     dimensions: "0,80 x 0,80",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/4.png",
   },
   {
     id: "mesa-sob-medida",
@@ -98,6 +104,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/38cfe258-3ee2-4f8a-90ef-05945f624c0e.png",
   },
   {
     id: "banco-u-130x040",
@@ -106,6 +113,7 @@ export const products: Product[] = [
     dimensions: "1,30 x 0,40",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/5.png",
   },
   {
     id: "banco-reto-140x030",
@@ -114,6 +122,7 @@ export const products: Product[] = [
     dimensions: "1,40 x 0,30",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/3626e5f5-132f-4252-be70-a6305f791be7.png",
   },
   {
     id: "banco-encosto-colonial",
@@ -122,6 +131,7 @@ export const products: Product[] = [
     dimensions: "1,50 x 0,90 | 1,30 x 0,90",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/6.png",
   },
   {
     id: "banco-reto-150x045",
@@ -130,6 +140,7 @@ export const products: Product[] = [
     dimensions: "1,50 x 0,45",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/1af87e46-8493-48b6-a106-c4288cb955c4.png",
   },
   {
     id: "banco-pes-u",
@@ -138,6 +149,7 @@ export const products: Product[] = [
     dimensions: "2,00 x 0,45",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/adbf3d87-5f88-4006-8f8a-c348a9f8302a.png",
   },
   {
     id: "lixeira-concreto-fino",
@@ -146,6 +158,7 @@ export const products: Product[] = [
     dimensions: "1,30 x 0,80 x 0,40",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/7.png",
   },
   {
     id: "cuba-artesanal",
@@ -154,6 +167,7 @@ export const products: Product[] = [
     dimensions: "50 x 35 x 13",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/b57e63c6-fabc-4593-a74e-6698b2d742fb.png",
   },
   {
     id: "cuba-bless",
@@ -162,6 +176,7 @@ export const products: Product[] = [
     dimensions: "50 x 35 x 13",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/d0492db0-e08d-437a-91cc-ea1276362e6c.png",
   },
   {
     id: "cuba-oval-terrazzo",
@@ -170,6 +185,7 @@ export const products: Product[] = [
     dimensions: "50 x 35 x 13",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/8.png",
   },
   {
     id: "piso-floral",
@@ -178,6 +194,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/f55e3d7f-b997-4603-9584-212b65d209dd.png",
   },
   {
     id: "piso-trevo",
@@ -186,6 +203,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/3071e20e-b81a-4a72-bdc4-769f2b55f754.png",
   },
   {
     id: "mesa-ping-pong",
@@ -194,6 +212,7 @@ export const products: Product[] = [
     dimensions: "Tamanho oficial",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/9.png",
   },
   {
     id: "mesa-futmesa",
@@ -202,6 +221,7 @@ export const products: Product[] = [
     dimensions: "Tamanho oficial",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/ad02c663-5e76-42f4-a7e4-f70154a147eb.png",
   },
   {
     id: "bate-rodas",
@@ -210,8 +230,9 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Área e Lazer",
     categorySlug: "area-e-lazer",
+    image: "/assets/catalog/10.png",
   },
-  // Revestimento
+  // Revestimento — Pages 11-18
   {
     id: "revestimento-abstrata",
     name: "Abstrata",
@@ -219,6 +240,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/bd5b8886-0e3b-4288-84a7-14b901fe56d6.png",
   },
   {
     id: "revestimento-ripado",
@@ -227,6 +249,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,50",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/3495b894-904c-492b-ae4a-a39ce9d00502.png",
   },
   {
     id: "revestimento-trapezio-3l",
@@ -235,6 +258,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,25",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/12.png",
   },
   {
     id: "revestimento-tsunami",
@@ -243,6 +267,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,19",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/d2cff074-72ca-47e9-985e-02e2aff27756.png",
   },
   {
     id: "revestimento-zeus",
@@ -251,6 +276,7 @@ export const products: Product[] = [
     dimensions: "1,00 x 0,50",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/13.png",
   },
   {
     id: "revestimento-canjiquinha",
@@ -259,6 +285,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,20",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/8b126b8c-01f3-403e-b63f-f62668b5542c.png",
   },
   {
     id: "revestimento-mini-origame",
@@ -267,6 +294,7 @@ export const products: Product[] = [
     dimensions: "0,40 x 0,40",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/14.png",
   },
   {
     id: "revestimento-origame",
@@ -275,6 +303,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,20",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/0c3cf15e-db74-4f59-822d-b08d65a985b3.png",
   },
   {
     id: "revestimento-mosaico",
@@ -283,6 +312,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/15.png",
   },
   {
     id: "revestimento-mosaico-liso",
@@ -291,6 +321,7 @@ export const products: Product[] = [
     dimensions: "0,80 x 0,40",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/d180e13f-42e6-433b-9909-fbc6a2456e98.png",
   },
   {
     id: "revestimento-multplus",
@@ -299,6 +330,7 @@ export const products: Product[] = [
     dimensions: "1,00 x 0,50",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/16.png",
   },
   {
     id: "revestimento-escaleno",
@@ -307,6 +339,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,50",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/4397207f-fc99-4258-881d-f7150cec88c8.png",
   },
   {
     id: "revestimento-estrutural",
@@ -315,6 +348,7 @@ export const products: Product[] = [
     dimensions: "0,40 x 0,40",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/17.png",
   },
   {
     id: "revestimento-ripa-cimenticia",
@@ -323,6 +357,7 @@ export const products: Product[] = [
     dimensions: "100 x 0,87",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/d501b5d5-bbc8-4eaa-a06c-af7898295e80.png",
   },
   {
     id: "revestimento-filete",
@@ -331,6 +366,7 @@ export const products: Product[] = [
     dimensions: "100 x 0,87",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "/assets/catalog/18.png",
   },
   {
     id: "revestimento-kit-4-mosaico",
@@ -339,6 +375,7 @@ export const products: Product[] = [
     dimensions: "0,30 x 0,30 | 0,50 x 0,50",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/ef6eb52d-d867-4d78-87c8-388812784740.png",
   },
   {
     id: "revestimento-floral",
@@ -347,8 +384,9 @@ export const products: Product[] = [
     dimensions: "0,30 x 0,30",
     category: "Revestimento",
     categorySlug: "revestimento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/876268bd-93db-4790-87af-566b11027b73.png",
   },
-  // Elemento Vazado
+  // Elemento Vazado — Pages 19-20
   {
     id: "elemento-arabela",
     name: "Arabela",
@@ -356,6 +394,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/9a127692-671b-4fd9-b8a7-9aaac90caefc.png",
   },
   {
     id: "elemento-margarida",
@@ -364,6 +403,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/b6833807-afc7-4f01-84ef-b57e4b7aec20.png",
   },
   {
     id: "elemento-16-furos",
@@ -372,6 +412,7 @@ export const products: Product[] = [
     dimensions: "30 x 30 x 7",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/6fa69d3f-fbf9-4116-ae50-ebec4f0d8000.png",
   },
   {
     id: "elemento-triangulo",
@@ -380,6 +421,7 @@ export const products: Product[] = [
     dimensions: "40 x 44 x 7",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/59f9a5aa-3489-4200-863d-0f28423e3ba9.png",
   },
   {
     id: "elemento-quadriculado",
@@ -388,6 +430,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "/assets/catalog/20.png",
   },
   {
     id: "elemento-mandala",
@@ -396,6 +439,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/a455de67-2e2f-4c2d-a142-73b3b7185c35.png",
   },
   {
     id: "elemento-arabe",
@@ -404,6 +448,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/db7a836b-4f82-42e1-8b8e-9147e4d55b4d.png",
   },
   {
     id: "elemento-taco-chines",
@@ -412,6 +457,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/7f1ca155-0afe-4f45-af56-811093876fc0.png",
   },
   {
     id: "elemento-flor",
@@ -420,6 +466,7 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/2cf9c5f9-9e7b-4318-a582-5c24cf79073d.png",
   },
   {
     id: "elemento-anti-chuva",
@@ -428,8 +475,9 @@ export const products: Product[] = [
     dimensions: "0,39 x 0,39 x 0,07",
     category: "Elemento Vazado",
     categorySlug: "elemento-vazado",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/e7fd9b1b-93d3-472e-91db-bf48a18129e9.png",
   },
-  // Acabamento em Concreto
+  // Acabamento em Concreto — Pages 21-24
   {
     id: "ralo-concreto",
     name: "Ralo em Concreto",
@@ -437,6 +485,7 @@ export const products: Product[] = [
     dimensions: "0,30 x 0,30 | 0,49 x 0,49",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/5ffde4cf-e3ad-45f8-8849-6b80035ef812.png",
   },
   {
     id: "chapeu-pilar",
@@ -445,6 +494,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/47e9a326-a5d0-48a0-b479-132fd158d803.png",
   },
   {
     id: "capa-muro",
@@ -453,6 +503,7 @@ export const products: Product[] = [
     dimensions: "0,17 x 0,80 | 0,19 x 0,80 | 0,23 x 0,80",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/14155a4a-306f-4fa6-98ed-aed631a13a0a.png",
   },
   {
     id: "pingadeira-reta",
@@ -461,6 +512,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,32 x 0,05",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/c1415447-62d4-42fb-97cf-55f9bee9d15f.png",
   },
   {
     id: "piso-calcada",
@@ -469,6 +521,7 @@ export const products: Product[] = [
     dimensions: "0,74 x 0,30 x 0,04",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "/assets/catalog/22.png",
   },
   {
     id: "lajota-sextavada",
@@ -477,6 +530,7 @@ export const products: Product[] = [
     dimensions: "0,25 x 0,25 x 0,08",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/013266af-857c-48aa-ad50-01222a749fe5.png",
   },
   {
     id: "lajota-quadrada",
@@ -485,6 +539,7 @@ export const products: Product[] = [
     dimensions: "0,30 x 0,30 x 0,05 a 0,60 x 0,60 x 0,05",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/7e601d5f-8041-449d-98c9-30d160ad79c4.png",
   },
   {
     id: "pisante-dormente",
@@ -493,6 +548,7 @@ export const products: Product[] = [
     dimensions: "0,60 x 0,15 x 0,05",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/9efe0b06-25e7-4359-a998-49476328ada3.png",
   },
   {
     id: "piso-calcada-copacabana",
@@ -501,6 +557,7 @@ export const products: Product[] = [
     dimensions: "0,50 x 0,50 x 0,2",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "/assets/catalog/23.png",
   },
   {
     id: "piso-podotátil",
@@ -509,6 +566,7 @@ export const products: Product[] = [
     dimensions: "25 x 25 x 2,5 | 40 x 40 x 2,5",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/7d549679-306f-4316-ab88-882b0b4535e0.png",
   },
   {
     id: "piso-intertravados",
@@ -517,6 +575,7 @@ export const products: Product[] = [
     dimensions: "0,20 x 0,10 (1,5cm a 6cm)",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/28da78cf-dd27-427b-a921-e468c428dc4a.png",
   },
   {
     id: "concregrama",
@@ -525,6 +584,7 @@ export const products: Product[] = [
     dimensions: "30 x 50 x 5",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/9a8c5bc0-efe6-461b-855e-a042b648e3f1.png",
   },
   {
     id: "guia-jardim-ondulada",
@@ -533,6 +593,7 @@ export const products: Product[] = [
     dimensions: "0,80 x 0,20 x 0,04",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "/assets/catalog/24.png",
   },
   {
     id: "pisao-jardim",
@@ -541,6 +602,7 @@ export const products: Product[] = [
     dimensions: "43 x 33 x 7",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/939e4d0f-224e-4e7b-8980-b921dfd1ff91.png",
   },
   {
     id: "guia",
@@ -549,8 +611,9 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Acabamento em Concreto",
     categorySlug: "acabamento",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/99f78262-cd40-483f-9de7-e51e23de89d3.png",
   },
-  // Construção Civil
+  // Construção Civil — Pages 25-27
   {
     id: "casa-gas-2-botijao",
     name: "Casa de Gás 2 Botijão",
@@ -558,6 +621,7 @@ export const products: Product[] = [
     dimensions: "90 x 105",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/2b809b8f-bc7c-47fb-9f0b-d2f9a2aeb0c2.png",
   },
   {
     id: "casa-gas-1-botijao",
@@ -566,6 +630,7 @@ export const products: Product[] = [
     dimensions: "90 x 70",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/7beaac97-bd57-4ce4-ae89-ab3755559a1d.png",
   },
   {
     id: "armario-concreto",
@@ -574,6 +639,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/400b65a6-add8-480e-bce8-e5bfba10cbbb.png",
   },
   {
     id: "placa-concreto",
@@ -582,6 +648,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "/assets/catalog/26.png",
   },
   {
     id: "meia-cana",
@@ -590,6 +657,7 @@ export const products: Product[] = [
     dimensions: "Sob medida",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/60c4b683-623c-40ad-94e2-f5dc6d2a639e.png",
   },
   {
     id: "cocho",
@@ -598,6 +666,7 @@ export const products: Product[] = [
     dimensions: "60 x 100 | 40 x 100",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/d2e5f0b8-191c-4d07-95a9-76123dc87c1e.png",
   },
   {
     id: "degraus-escada",
@@ -606,6 +675,7 @@ export const products: Product[] = [
     dimensions: "100 x 60",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "/assets/catalog/27.png",
   },
   {
     id: "caixa-passagem-eletrica",
@@ -614,6 +684,7 @@ export const products: Product[] = [
     dimensions: "45 x 45 x 30",
     category: "Construção Civil",
     categorySlug: "construcao-civil",
+    image: "https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/30d46e2b-f5a5-490c-93d7-544a0b78b5f2.png",
   },
 ];
 

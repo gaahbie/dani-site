@@ -6,14 +6,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductCard from "@/components/ProductCard";
 import { products, WHATSAPP_NUMBER } from "@/data/products";
 
-const categoryIcons: Record<string, string> = {
-  "area-e-lazer": "🏡",
-  revestimento: "🧱",
-  "elemento-vazado": "🔲",
-  acabamento: "🏗️",
-  "construcao-civil": "🏠",
-};
-
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const product = products.find((p) => p.id === id);
@@ -41,7 +33,6 @@ const ProductDetail = () => {
     .filter((p) => p.categorySlug === product.categorySlug && p.id !== product.id)
     .slice(0, 4);
 
-  const icon = categoryIcons[product.categorySlug] || "📦";
   const whatsappMessage = `Olá! Gostaria de saber mais sobre o produto: ${product.name} (${product.dimensions})`;
 
   return (
@@ -76,8 +67,12 @@ const ProductDetail = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Product Image */}
-            <div className="bg-gradient-to-br from-[#EFF6FF] to-[#DBEAFE] rounded-2xl flex items-center justify-center h-72 sm:h-96 lg:h-[500px] shadow-inner">
-              <span className="text-8xl sm:text-9xl opacity-50">{icon}</span>
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-72 sm:h-96 lg:h-[500px]">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Product Info */}
