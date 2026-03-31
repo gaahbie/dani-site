@@ -7,30 +7,35 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1a2f4e] text-white shadow-lg">
+    <header className="sticky top-0 z-50 bg-[#1E3A5F] text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img
-              src="https://mgx-backend-cdn.metadl.com/generate/images/1073975/2026-03-31/1743ac6f-05a6-4f06-86c1-7cd44a59798d.png"
-              alt="Alfa Soluções em Concreto"
-              className="h-10 sm:h-14 w-auto object-contain"
-            />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2563EB] rounded-lg flex items-center justify-center font-bold text-lg sm:text-xl">
+              A
+            </div>
+            <div className="hidden sm:block">
+              <h1 className="text-lg font-bold leading-tight">Alfa Soluções</h1>
+              <p className="text-xs text-[#60A5FA] leading-tight">em Concreto</p>
+            </div>
+            <div className="sm:hidden">
+              <h1 className="text-sm font-bold leading-tight">Alfa</h1>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-sm font-medium hover:text-[#2a9d8f] transition-colors">
+            <Link to="/" className="text-sm font-medium hover:text-[#60A5FA] transition-colors">
               Início
             </Link>
-            <a href="#categorias" className="text-sm font-medium hover:text-[#2a9d8f] transition-colors">
+            <a href="#categorias" className="text-sm font-medium hover:text-[#60A5FA] transition-colors">
               Categorias
             </a>
-            <a href="#produtos" className="text-sm font-medium hover:text-[#2a9d8f] transition-colors">
+            <a href="#produtos" className="text-sm font-medium hover:text-[#60A5FA] transition-colors">
               Produtos
             </a>
-            <a href="#contato" className="text-sm font-medium hover:text-[#2a9d8f] transition-colors">
+            <a href="#contato" className="text-sm font-medium hover:text-[#60A5FA] transition-colors">
               Contato
             </a>
           </nav>
@@ -41,7 +46,7 @@ const Header = () => {
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os produtos.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#2a9d8f] hover:bg-[#238b7e] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors"
+              className="flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors"
             >
               <Phone className="w-4 h-4" />
               Fale Conosco
@@ -64,28 +69,28 @@ const Header = () => {
               <Link
                 to="/"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-sm font-medium hover:text-[#2a9d8f] transition-colors py-2"
+                className="text-sm font-medium hover:text-[#60A5FA] transition-colors py-2"
               >
                 Início
               </Link>
               <a
                 href="#categorias"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-sm font-medium hover:text-[#2a9d8f] transition-colors py-2"
+                className="text-sm font-medium hover:text-[#60A5FA] transition-colors py-2"
               >
                 Categorias
               </a>
               <a
                 href="#produtos"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-sm font-medium hover:text-[#2a9d8f] transition-colors py-2"
+                className="text-sm font-medium hover:text-[#60A5FA] transition-colors py-2"
               >
                 Produtos
               </a>
               <a
                 href="#contato"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-sm font-medium hover:text-[#2a9d8f] transition-colors py-2"
+                className="text-sm font-medium hover:text-[#60A5FA] transition-colors py-2"
               >
                 Contato
               </a>
@@ -93,7 +98,7 @@ const Header = () => {
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os produtos.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#2a9d8f] hover:bg-[#238b7e] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors w-fit mt-2"
+                className="flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors w-fit mt-2"
               >
                 <Phone className="w-4 h-4" />
                 Fale Conosco
